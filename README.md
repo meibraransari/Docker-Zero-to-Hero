@@ -71,7 +71,7 @@ Ready? Let’s dive into the containerized world! 🐳🔥
 
 ## 🤝 Contributing
 
-Ensure commits use conventional commits.
+Contributions are most welcome. Ensure commits use conventional commits.
 ### 💼 Connect with me 👇👇 😊
 
 - 🔥 [**Youtube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)
