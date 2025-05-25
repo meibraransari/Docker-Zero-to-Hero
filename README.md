@@ -1,5 +1,7 @@
 # 🐳 Docker Zero to Hero 🚀
 
+> **Docker Zero to Hero (Basic to Advance Docker | Production Grade | Corporate Secrets Revealed)**
+
 Welcome to **Docker Zero to Hero** — your ultimate journey to mastering Docker from the ground up! Whether you're a complete beginner or someone with some experience looking to solidify your skills, this series is designed to take you from zero ➡️ hero, step-by-step.
 
 ---
@@ -66,3 +68,19 @@ All you need is:
 
 Ready? Let’s dive into the containerized world! 🐳🔥
 
+
+## 🤝 Contributing
+
+Ensure commits use conventional commits.
+### 💼 Connect with me 👇👇 😊
+
+- 🔥 [**Youtube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)
+- ✍ [**Blog**](https://ibraransari.blogspot.com/)
+- 💼 [**LinkedIn**](https://www.linkedin.com/in/ansariibrar/)
+- 👨‍💻 [**Github**](https://github.com/meibraransari?tab=repositories)
+- 💬 [**Telegram**](https://t.me/DevOpsinActionTelegram)
+- 🐳 [**Docker**](https://hub.docker.com/u/ibraransaridocker)
+
+# Hit the Star! ⭐
+***If you are planning to use this repo for learning, please hit the star. Thanks!***
+****
