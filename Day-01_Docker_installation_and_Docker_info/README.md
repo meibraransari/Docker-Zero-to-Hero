@@ -66,7 +66,7 @@ total 52K
 | `swarm/`      | Swarm mode cluster information                            |
 | `tmp/`        | Temporary working data                                    |
 | `volumes/`    | Persistent volumes mounted into containers                |
-
+| ------------- | --------------------------------------------------------- |
 ````
 
 ### 🐧 For Linux users only:
