@@ -71,7 +71,14 @@ Ready? Let’s dive into the containerized world! 🐳🔥
 
 ## 🤝 Contributing
 
-Contributions are most welcome. Ensure commits use conventional commits.
+Contributions are welcome! 🙌 If you have suggestions, improvements, or additional examples:
+1. Fork this repository. 🍴
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m git commit -m "Add feature: brief description"`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request. 🚀
+
+
 ### 💼 Connect with me 👇👇 😊
 
 - 🔥 [**Youtube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)

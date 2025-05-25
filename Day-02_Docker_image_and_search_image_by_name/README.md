@@ -89,11 +89,10 @@ ibraransaridocker/dotfiles              latest
 Contributions are welcome! 🙌 If you have suggestions, improvements, or additional examples:
 1. Fork this repository. 🍴
 2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m "Add feature"`).
+3. Commit your changes (`git commit -m git commit -m "Add feature: brief description"`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a Pull Request. 🚀
 
-Please ensure your contributions align with the topic of Docker images and searching by name.
 
 ### 💼 Connect with me 👇👇 😊
 
