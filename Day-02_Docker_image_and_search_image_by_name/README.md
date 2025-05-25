@@ -39,9 +39,31 @@ Docker Hub hosts millions of images, and searching efficiently helps you find th
 Here are some practical commands to get you started:
 
 ### 1. Search for a Docker Image
-To search for an image (e.g., `nginx`):
+
 ```bash
-docker search nginx
+# Search for images with the specified name in Docker Hub
+docker search image-name
+
+# Search for images and limit the number of results
+docker search --limit 5 image-name
+
+# Search for images with automated builds
+docker search --filter is-automated=true image-name
+
+# Search for official images only
+docker search --filter is-official=true image-name
+
+# Search for images with a minimum number of stars
+docker search --filter stars=10 image-name
+
+# Search for images and format the output
+docker search --format "{{.Name}}: {{.Description}}" image-name
+
+# Search for images and include truncated descriptions
+docker search --no-trunc image-name
+
+# Search quietly, outputting only image names
+docker search -q image-name
 ```
 This lists available `nginx` images on Docker Hub, showing details like name, description, and stars. ⭐
 
