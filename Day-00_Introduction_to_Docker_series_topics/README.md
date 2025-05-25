@@ -1,3 +1,8 @@
+---
+created: 2025-05-25T09:03:30+05:30
+updated: 2025-05-25T09:25:47+05:30
+Maintainer: Ibrar Ansari
+---
 # Day-0: Getting Started with Docker – Zero to Hero Series 🐳
 
 Welcome to the beginning of the **Docker Zero to Hero Series** brought to you by the **DevOpsinAction** channel!
