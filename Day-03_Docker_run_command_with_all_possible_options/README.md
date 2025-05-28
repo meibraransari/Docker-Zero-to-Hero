@@ -217,9 +217,6 @@ docker run -itd --name=dia --pid=host ubuntu:latest /bin/bash
 
 ---
 
-Would you like me to create this as a **Markdown file for GitHub** or as a **YouTube script format** next?
-
-
 ### Happy Dockering! 🐳✨
 
 ## 🤝 Contributing
