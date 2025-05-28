@@ -5,7 +5,8 @@
 Welcome to **Docker Zero to Hero** — your ultimate journey to mastering Docker from the ground up! Whether you're a complete beginner or someone with some experience looking to solidify your skills, this series is designed to take you from zero ➡️ hero, step-by-step.
 
 
-
+## 🎬 Docker Zero To Hero Playlist
+[![Watch on Youtube](https://github.com/meibraransari/Docker-Zero-to-Hero/blob/main/assets/docker_zero_to_hero.png)](https://www.youtube.com/playlist?list=PL5Afhqcc17s1xGXP-31i65RLUMwyE0N1o)
 
 ---
 
