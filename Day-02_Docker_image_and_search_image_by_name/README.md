@@ -7,6 +7,9 @@ Maintainer: Ibrar Ansari
 ---
 # 🚀 Day-2: Docker Images and search images.
 
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/KmS6ylg3HAQ/maxresdefault.jpg)](https://youtu.be/KmS6ylg3HAQ)
+
 ## 🐳 What is a Docker Image?
 
 A **Docker image** is a lightweight, standalone, and executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and dependencies. Think of it as a snapshot or blueprint of an application! 📸

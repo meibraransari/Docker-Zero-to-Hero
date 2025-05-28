@@ -17,6 +17,10 @@ From the **basics** all the way to **production-grade deployments**.
 
 Whether you're just starting out or brushing up for a DevOps role, this series is packed with practical, actionable content.
 
+
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/C33i_oADHIU/maxresdefault.jpg)](https://youtu.be/C33i_oADHIU)
+
 ---
 
 ## 💡 What to Expect

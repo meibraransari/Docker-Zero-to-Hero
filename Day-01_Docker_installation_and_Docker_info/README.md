@@ -10,6 +10,10 @@ Maintainer: Ibrar Ansari
 Welcome to Day-1 of learning Docker! In this guide, we'll cover how to install Docker, verify the installation, run your first container, and have a little fun with a live web server example. 🎉
 
 
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/9s_1qzrBhRo/maxresdefault.jpg)](https://youtu.be/9s_1qzrBhRo)
+
+
 ## 🔧 Step 1: Install Docker
 
 👉 Official Docs:

@@ -7,6 +7,9 @@ Maintainer: Ibrar Ansari
 
 Docker's `run` command is one of the most essential and versatile tools in a developer's container toolbox. Below is a comprehensive list of `docker run` options, examples, and use cases — **perfect for beginners and intermediate Docker users!**
 
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/TXIQYO21ais/maxresdefault.jpg)](https://youtu.be/TXIQYO21ais)
+
 ---
 
 ## 🔹 Abbreviation
