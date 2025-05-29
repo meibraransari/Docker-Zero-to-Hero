@@ -1,6 +1,7 @@
 ---
-created: 2025-05-28T21:32:42+05:30
-updated: 2025-05-29T07:46:25+05:30
+Created: 2025-05-29T07:52:46+05:30
+Updated: 2025-05-29T07:55:56+05:30
+Maintainer: Ibrar Ansari
 ---
 
 # 🐳 **Day 4: Mastering docker ps Command - With examlpes!**
