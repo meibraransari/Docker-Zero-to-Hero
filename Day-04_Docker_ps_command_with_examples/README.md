@@ -1,6 +1,6 @@
 ---
 Created: 2025-05-29T07:52:46+05:30
-Updated: 2025-05-29T07:55:56+05:30
+Updated: 2025-05-29T09:21:26+05:30
 Maintainer: Ibrar Ansari
 ---
 
@@ -9,13 +9,9 @@ Maintainer: Ibrar Ansari
 This guide provides a deep dive of the `docker ps` command, including how to list, filter, format, and count containers and images.
 Docker ps command lists containers on your system. It displays useful information such as container IDs, image names, uptime, exposed ports and many more.. It's an essential tool to working with the containers. 🐳📋
 
-<!--
+
 ## 🎬 Video Demonstration
-[![Watch on Youtube](https://i.ytimg.com/vi/TXIQYO21ais/maxresdefault.jpg)](https://youtu.be/TXIQYO21ais)
-
--->
-
----
+[![Watch on Youtube](https://i.ytimg.com/vi/73vRFtsnmvI/maxresdefault.jpg)](https://youtu.be/73vRFtsnmvI)
 
 ## 📋 Basic Usage
 
