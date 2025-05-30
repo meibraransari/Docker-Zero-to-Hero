@@ -116,11 +116,6 @@ docker exec -it alpine bash
 docker exec -it alpine sh
 ```
 
-* `-i`: Keeps STDIN open.
-* `-t`: Allocates a pseudo-terminal.
-* 
-💡 Now you're inside the container and can run commands like you're in a Linux terminal!
-
 ## 🔒 6. Run as a Specific User
 
 Run a command as the `root` user:
