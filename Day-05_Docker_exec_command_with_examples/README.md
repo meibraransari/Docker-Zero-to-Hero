@@ -8,11 +8,10 @@ Maintainer: Ibrar Ansari
 Welcome to this **Docker tutorial**! In this guide, we cover the **`docker exec` command**. Whether you're new to Docker or just need a refresher, this will help you understand how to run commands inside a running container. Let's dive in! 🎯
 
 
-<!--
-## 🎬 Video Demonstration
-[![Watch on Youtube](https://i.ytimg.com/vi/TXIQYO21ais/maxresdefault.jpg)](https://youtu.be/TXIQYO21ais)
 
--->
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/sxo9x6kSpCI/maxresdefault.jpg)](https://youtu.be/sxo9x6kSpCI)
+
 
 ## 📌 1. What is `docker exec`?
 
