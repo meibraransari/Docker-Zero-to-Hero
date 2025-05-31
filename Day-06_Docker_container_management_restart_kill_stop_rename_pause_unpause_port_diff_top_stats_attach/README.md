@@ -192,7 +192,7 @@ docker exec -it my_container bash
 ## 🔗 Additional Resources
 
 - 📘 [Docker CLI Docs](https://docs.docker.com/engine/reference/commandline/docker/)
-- 🧰 [Docker cContainer Management Overview](https://docs.docker.com/reference/cli/docker/container/)
+- 🧰 [Docker Container Management Overview](https://docs.docker.com/reference/cli/docker/container/)
 - 🐳 [Docker Hub](https://hub.docker.com/)
 
 ---
