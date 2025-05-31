@@ -9,6 +9,10 @@ Maintainer: Ibrar Ansari
 
 Welcome to another **Docker tutorial**! Today we dive into **restart kill stop rename pause unpause port diff top stats attach** that every DevOps engineer should know. These tools help you stop, restart, rename, pause, and monitor containers effectively.
 
+
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/FmOOImObJRA/maxresdefault.jpg)](https://youtu.be/FmOOImObJRA)
+
 ---
 
 ## 📌 1. `Docker start/stop`
