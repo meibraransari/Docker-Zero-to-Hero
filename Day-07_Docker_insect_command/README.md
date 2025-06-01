@@ -12,6 +12,10 @@ Here is the `docker inspect --help` information formatted as a Markdown section:
 
 
 
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/-KAwgYw6z_0/maxresdefault.jpg)](https://youtu.be/-KAwgYw6z_0)
+
+
 ## 🛠️ `docker inspect` Help
 
 ```bash
