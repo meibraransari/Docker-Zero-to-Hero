@@ -1,6 +1,6 @@
 ---
 Created: 2025-06-01T07:21:01+05:30
-Updated: 2025-06-01T07:35:35+05:30
+Updated: 2025-06-01T07:53:18+05:30
 Maintainer: Ibrar Ansari
 ---
 
@@ -235,6 +235,11 @@ docker inspect \
   --format "$(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Zero-to-Hero/refs/heads/main/Day-07_Docker_insect_command/assets/run.tpl)" \
   $container_name
 ```
+
+## 🔗 Additional Resources
+
+- 🧰 [Docker inspect](https://docs.docker.com/reference/cli/docker/container/inspect/)
+- 📘 [Format command and log output](https://docs.docker.com/engine/cli/formatting/)
 
 
 ## ✅ Final Tips
