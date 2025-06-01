@@ -1,12 +1,8 @@
 ---
 Created: 2025-06-01T07:21:01+05:30
-Updated: 2025-06-01T07:21:56+05:30
+Updated: 2025-06-01T07:35:35+05:30
+Maintainer: Ibrar Ansari
 ---
-
-created: 2025-05-31T20:49:44+05:30
-updated: 2025-05-31T20:53:23+05:30
-
-
 
 # 🚢 Day 07 - Docker Inspect Command Deep Dive
 
@@ -218,7 +214,7 @@ docker inspect $container_name | grep -i MaxSize
 
 
 
-## 🏃 Executed Commands
+## 🏃 Find Executed Commands
 
 ```bash
 # Path and arguments used to start container
@@ -230,6 +226,16 @@ docker inspect -f "{{.Name}} {{.Config.Cmd}}" $(docker ps -a -q)
 # With container ID
 docker inspect -f "{{.Path}} {{.Args}} ({{.Id}})" $(docker ps -a -q)
 ```
+
+## 🐳  `docker inspect` template to regenerate the `docker run` command from created container
+
+```bash
+# This file defines how the output from docker inspect should be presented — potentially in a cleaner, structured format.
+docker inspect \
+  --format "$(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Zero-to-Hero/refs/heads/main/Day-07_Docker_insect_command/assets/run.tpl)" \
+  $container_name
+```
+
 
 ## ✅ Final Tips
 
