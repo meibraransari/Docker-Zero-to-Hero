@@ -1,6 +1,6 @@
 ---
 Created: 2025-06-01T07:21:01+05:30
-Updated: 2025-06-01T07:53:18+05:30
+Updated: 2025-06-01T07:58:50+05:30
 Maintainer: Ibrar Ansari
 ---
 
@@ -240,6 +240,7 @@ docker inspect \
 
 - 🧰 [Docker inspect](https://docs.docker.com/reference/cli/docker/container/inspect/)
 - 📘 [Format command and log output](https://docs.docker.com/engine/cli/formatting/)
+- 📘 [JSON Path Finder](https://jsonpathfinder.com/)
 
 
 ## ✅ Final Tips
