@@ -160,14 +160,12 @@ sudo cat $CONT_PATH/usr/share/nginx/html/index.html
 
 ## ✅ Summary Table
 
-
-| Task                            | Command Format                                            |
-| - |  |
-| Copy file: Host ➡️ Container    | `docker cp file.txt container:/path/`                     |
-| Copy file: Container ➡️ Host    | `docker cp container:/file.txt /path/on/host/`            |
-| Copy entire directory           | `docker cp /src/. container:/dest/`                       |
-| Export file from temp container | `docker cp container:/path ./`                            |
-
+| **Task**                        | **Command Format**                             |
+| ------------------------------- | ---------------------------------------------- |
+| Copy file: Host → Container     | `docker cp file.txt container:/path/`          |
+| Copy file: Container → Host     | `docker cp container:/file.txt /path/on/host/` |
+| Copy entire directory           | `docker cp /src/. container:/dest/`            |
+| Export file from temp container | `docker cp container:/path ./`                 |
 
 
 ## 📌 Final Tips
@@ -175,5 +173,23 @@ sudo cat $CONT_PATH/usr/share/nginx/html/index.html
 * Always verify file permissions after copying.
 * Avoid copying into running containers' system paths (`/bin`, `/lib`) unless you know what you're doing.
 * Use `docker volume` if frequent file sharing is needed.
+
+
+---
+
+## 💼 Connect with me 👇👇 😊
+
+- 🔥 [**Youtube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)
+- ✍ [**Blog**](https://ibraransari.blogspot.com/)
+- 💼 [**LinkedIn**](https://www.linkedin.com/in/ansariibrar/)
+- 👨‍💻 [**Github**](https://github.com/meibraransari?tab=repositories)
+- 💬 [**Telegram**](https://t.me/DevOpsinActionTelegram)
+- 🐳 [**Docker**](https://hub.docker.com/u/ibraransaridocker)
+
+---
+
+## ⭐ Hit the Star!
+
+_**If this helped you, please star the repo and share it. Thanks!**_ 🌟
 
 
