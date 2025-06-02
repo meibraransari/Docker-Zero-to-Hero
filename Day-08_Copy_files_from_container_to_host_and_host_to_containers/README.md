@@ -13,10 +13,10 @@ Let’s break it down step-by-step with examples for:
 ✅ Exporting config from a temp container  
 ✅ Advanced tricks & troubleshooting  
 
-<!--
+
 ## 🎬 Video Demonstration
-[![Watch on Youtube](https://i.ytimg.com/vi/-KAwgYw6z_0/maxresdefault.jpg)](https://youtu.be/-KAwgYw6z_0)
--->
+[![Watch on Youtube](https://i.ytimg.com/vi/PcIa46zrpmU/maxresdefault.jpg)](https://youtu.be/PcIa46zrpmU)
+
 
 ## 🔧 Set Example Container Name
 
