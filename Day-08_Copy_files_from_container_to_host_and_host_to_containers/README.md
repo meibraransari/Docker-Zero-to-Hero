@@ -175,6 +175,10 @@ sudo cat $CONT_PATH/usr/share/nginx/html/index.html
 * Use `docker volume` if frequent file sharing is needed.
 
 
+## 🔗 Additional Resources
+
+- 📘 [Docker cp command](https://docs.docker.com/reference/cli/docker/container/cp/)
+
 ---
 
 ## 💼 Connect with me 👇👇 😊
