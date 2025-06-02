@@ -160,6 +160,7 @@ sudo cat $CONT_PATH/usr/share/nginx/html/index.html
 
 ## ✅ Summary Table
 
+
 | Task                            | Command Format                                            |
 | - |  |
 | Copy file: Host ➡️ Container    | `docker cp file.txt container:/path/`                     |
