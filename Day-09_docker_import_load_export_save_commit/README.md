@@ -12,10 +12,10 @@ Welcome to this hands-on guide for **Exporting, Importing, Saving, and Loading D
 - 📝 **`docker commit`** – Creates a new image from a container’s changes.
 
 ---
-<!--
+
 ## 🎬 Video Demonstration
-[![Watch on Youtube](https://i.ytimg.com/vi/PcIa46zrpmU/maxresdefault.jpg)](https://youtu.be/PcIa46zrpmU)
--->
+[![Watch on Youtube](https://i.ytimg.com/vi/TtA1HT6Doe4/maxresdefault.jpg)](https://youtu.be/TtA1HT6Doe4)
+
 
 ## ⚖️ Comparison: `docker export` vs `docker save` vs `docker commit`
 
