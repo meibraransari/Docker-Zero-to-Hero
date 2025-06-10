@@ -1,13 +1,7 @@
----
-created: 2025-06-05T08:46:38+05:30
-updated: 2025-06-10T07:06:18+05:30
-Maintainer: Ibrar Ansari
----
-### 📄 `docker-resource-management.md`
-
 # 🐳 Docker Resource Management Guide
 
 Managing system resources like CPU, memory, disk, and I/O is crucial in production environments to ensure containers behave predictably and don't starve the host or other containers.
+
 ## 📌 Why Resource Management Matters?
 
 - Prevent 🛑 one container from eating up all system resources.
@@ -15,6 +9,12 @@ Managing system resources like CPU, memory, disk, and I/O is crucial in producti
 - Protect the host and other containers from **resource exhaustion**.
 - Simulate production-like limits in development.
 - Efficient Use of Infrastructure
+
+
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/wQNdXVUP9BA/maxresdefault.jpg)](https://youtu.be/wQNdXVUP9BA)
+
+
 # Docker Resource Limits: Key Components
 
 Docker resource limits allow developers to control how much CPU, memory, and other system resources a container can use. Below are the primary components for configuring these limits.
@@ -199,7 +199,9 @@ docker stats cpu
 docker run -itd --name=pid --pids-limit=5 ubuntu
 
 # Test pid
-sleep 500 && sleep 500 && sleep 500 && sleep 500 && sleep 500
+sleep 500 & sleep 500 & sleep 500 & sleep 500 & sleep 500
+or 
+for i in {1..10}; do sleep 500 & done
 
 # Check pid
 docker stats pid
