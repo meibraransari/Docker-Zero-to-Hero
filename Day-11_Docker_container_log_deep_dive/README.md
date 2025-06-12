@@ -6,7 +6,7 @@ This guide explores Docker container logging in depth, covering everything from 
 
 Docker containers generate logs to track their activities, errors, and runtime behavior. These logs are essential for debugging, monitoring, and ensuring the health of applications in development and production environments. Docker provides a flexible logging system that can be tailored to various use cases. Let's dive into the fundamentals and scale up to advanced techniques! 🔍
 
-### Why Logging Matters? 🤔
+## 🤔 Why Logging Matters? 
 
 - **Debugging**: Identify and fix issues in containerized applications.
 - **Monitoring**: Track performance and system health.
@@ -16,7 +16,7 @@ Docker containers generate logs to track their activities, errors, and runtime b
 ## 🛠️ Basics of Docker Container Logs
 
 Docker captures logs from a container’s `stdout` (standard output) and `stderr` (standard error) streams. By default, Docker uses the `json-file` logging driver to store logs.
-### `stdout` vs `stderr`
+## `stdout` vs `stderr`
 
 | Stream   | Purpose                           |
 | -------- | --------------------------------- |
@@ -27,7 +27,7 @@ Docker captures logs from a container’s `stdout` (standard output) and `stderr
 > [!attention] 
 > In Docker logs both `stdout` vs `stderr` is combined, to see separately see below examples 
 
-### ⚙️ Docker help command
+## 🔍 Docker help command
 
 Get options using help command.
 
@@ -47,7 +47,7 @@ Options:
       --until string   Show logs before a timestamp (e.g. "2013-01-02T13:23:37Z") or relative
                        (e.g. "42m" for 42 minutes)
 ```
-### Syntax Examples
+## ✅ Syntax Examples
 ```bash
 docker logs --follow <container_name_or_id>
 docker logs --details <container_name_or_id>
@@ -61,7 +61,7 @@ docker logs --since <YYYY-MM-DDTHH:MM:SS> --until <YYYY-MM-DDTHH:MM:SS> <contain
 docker logs <container_id> | grep pattern
 docker logs <container_id> | grep -i error
 ```
-### 🧪 LAB Activity
+## 🧪 LAB Activity
 
 ```bash
 # Create containers to monitor log
@@ -157,7 +157,7 @@ sudo cat /var/lib/docker/containers/$CONTAINER_ID/$CONTAINER_ID-json.log | jq
 sudo cat /var/lib/docker/containers/$(docker inspect --format='{{.Id}}' nginx)/$(docker inspect --format='{{.Id}}' nginx)-json.log | jq
 sudo jq . /var/lib/docker/containers/$(docker inspect -f '{{.Id}}' nginx)/$(docker inspect -f '{{.Id}}' nginx)-json.log
 ```
-### Default Logging Driver: `json-file` 📝
+## 📝Default Logging Driver: `json-file` 
 
 The `json-file` driver stores logs as JSON objects on the host filesystem, typically in `/var/lib/docker/containers/<container_id>/<container_id>-json.log`.
 **Pros**:
@@ -167,7 +167,7 @@ The `json-file` driver stores logs as JSON objects on the host filesystem, typic
 **Cons**:
 - Logs can consume significant disk space.
 - Not ideal for large-scale production.
-### Setting/Changing Logging Drivers Globally 🌍
+## ⚙️ Setting/Changing Logging Drivers Globally 🌍
 
 ```bash 
 # Check global logging driver
@@ -276,7 +276,7 @@ Docker supports multiple **logging drivers** to handle container logs differentl
   - Increased CPU usage while decompressing
 - The **maximum size** of log files depends on the capacity of the host storage where the Docker data directory resides.
 
-### 🛠 Set driver at runtime:
+## 🛠 Set driver at runtime:
 1. **`none`**: Disables logging entirely (useful for minimal setups).
     docker run --log-driver=none --name my-app nginx 
 2. **`local`**: Stores logs in a custom binary format, optimized for performance.
@@ -286,21 +286,21 @@ Docker supports multiple **logging drivers** to handle container logs differentl
 4. **`journald`**: Integrates with `systemd` journal for Linux systems.
     docker run --log-driver=journald --name my-app nginx
 
-### GUI Logging APP 1
+## 📊 GUI Logging APP 1
 ```bash
 docker run --name dozzle -d --volume=/var/run/docker.sock:/var/run/docker.sock -p 8080:8080 amir20/dozzle:latest
 # Dozzle will be available at http://localhost:8080/.
 # https://github.com/amir20/dozzle
 ```
 
-### GUI Logging APP 2
+## 📊 GUI Logging APP 2
 ```
 docker run --restart=always --name c-docker-web-ui -d -p 9000:9000  -v /var/run/docker.sock:/var/run/docker.sock pottava/docker-webui
 # Dozzle will be available at http://localhost:9000/.
 # https://github.com/pottava/docker-webui
 ```
 
-### GUI Logging APP 3
+## 📊 GUI Logging APP 3
 ```
 docker run -d \
   -p 9000:9000 \
@@ -309,12 +309,12 @@ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   portainer/portainer-ce:latest
 ```
-### How to Properly Log (Best Practices)
+## 👀 How to Properly Log (Best Practices)
 - Log to the Standard Output Stream
 - Limit the log size
 - Rotate Logs
 
-### 🎯 Summary
+## 🎯 Summary
 
 | Concept             | Dev Environment | Production Guidance           |
 | ------------------- | --------------- | ----------------------------- |
@@ -326,7 +326,7 @@ docker run -d \
 
 
 ---
-### 🐳 Docker Logging Resources
+## 🐳 Docker Logging Resources
 
 - 🏷️ [Log Tags Overview](https://docs.docker.com/engine/logging/log_tags/)  
   Learn about available log tags and how to use them with logging drivers.
@@ -340,8 +340,8 @@ docker run -d \
   Additional info on log tags for container logging configuration.
 
 
-### DevOps Integration
-[!Click here...](./assets/DevOps.md)
+## 🛠️ DevOps Integration
+[Click here...!](./assets/DevOps.md)
 
 
 ---
