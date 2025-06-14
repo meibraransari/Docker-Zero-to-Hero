@@ -1,7 +1,3 @@
----
-created: 2025-06-13T21:39:22+05:30
-updated: 2025-06-14T08:42:50+05:30
----
 # 🐳 Docker Restart Policy – Master It Like a Pro! 🚀
 
 Welcome to this video on **Docker Restart Policies**! Whether you're a Docker newbie or an intermediate user, this guide will help you **understand**, **practice**, and **master** restart policies to build resilient containers. Let’s dive in! 💡
