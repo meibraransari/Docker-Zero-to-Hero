@@ -2,6 +2,10 @@
 
 Welcome to this video on **Docker Restart Policies**! Whether you're a Docker newbie or an intermediate user, this guide will help you **understand**, **practice**, and **master** restart policies to build resilient containers. Let’s dive in! 💡
 
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/WEFlVX8T1Sk/maxresdefault.jpg)](https://youtu.be/WEFlVX8T1Sk)
+
+
 ## 📘 What is a Docker Restart Policy?
 
 Docker restart policies help you **automatically restart containers** under certain conditions (like after failure, reboot, etc.) — useful for keeping your services up without manual intervention. Understanding Docker restart policies is crucial for maintaining container uptime and ensuring that services recover from failures automatically.
