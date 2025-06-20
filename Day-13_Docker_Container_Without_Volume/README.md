@@ -1,6 +1,6 @@
 ---
 Created: 2025-06-20T06:27:22+05:30
-Updated: 2025-06-20T06:31:07+05:30
+Updated: 2025-06-20T06:35:35+05:30
 ---
 # 🚀 Mastering Docker Volumes | Complete Guide
 
@@ -77,7 +77,7 @@ Docker containers run the software stack defined within an Docker image. Images 
 
 So, any file change inside the container creates a working copy in the read-write layer. However, when the container is stopped or deleted, that read-write layer is lost:
 
-![assets/image_layers.png]
+![image_layers](assets/image_layers.png)
 
 ### 🔹 Step 3: Verify Container and Find File Location and Deference
 
