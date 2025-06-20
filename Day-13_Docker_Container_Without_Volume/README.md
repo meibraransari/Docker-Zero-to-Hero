@@ -77,7 +77,7 @@ Docker containers run the software stack defined within an Docker image. Images 
 
 So, any file change inside the container creates a working copy in the read-write layer. However, when the container is stopped or deleted, that read-write layer is lost:
 
-![[assets/image_layers.png]]
+![assets/image_layers.png]
 
 ### 🔹 Step 3: Verify Container and Find File Location and Deference
 
