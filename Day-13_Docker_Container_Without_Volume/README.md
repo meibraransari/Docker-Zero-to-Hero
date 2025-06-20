@@ -1,8 +1,6 @@
 ---
-created: 2025-06-19T07:22:46+05:30
-updated: 2025-06-20T06:25:24+05:30
 Created: 2025-06-20T06:27:22+05:30
-Updated: 2025-06-20T06:30:00+05:30
+Updated: 2025-06-20T06:31:07+05:30
 ---
 # 🚀 Mastering Docker Volumes | Complete Guide
 
