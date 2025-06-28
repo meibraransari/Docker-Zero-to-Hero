@@ -28,6 +28,7 @@ By default, any data written inside a container is **lost when the container is 
 
 * `-v` or `--volume`: Specify a volume.
 * `--mount`: More explicit, flexible alternative (preferred for clarity).
+* `--tmfs`: Mount a temporary in-memory filesystem (tmpfs). Useful for ephemeral data that doesn't persist across reboots.
 
 ---
 
@@ -61,6 +62,8 @@ docker volume ls
 ```bash
 docker volume create nginx_data
 docker run -v nginx_data:/usr/share/nginx/html/ nginx:alpine
+or
+docker run --volume nginx_data:/usr/share/nginx/html/ nginx:alpine
 docker volume ls
 ```
 
