@@ -28,7 +28,7 @@ By default, any data written inside a container is **lost when the container is 
 
 * `-v` or `--volume`: Specify a volume.
 * `--mount`: More explicit, flexible alternative (preferred for clarity).
-* `--tmfs`: Mount a temporary in-memory filesystem (tmpfs). Useful for ephemeral data that doesn't persist across reboots.
+* `--tmpfs`: Mount a temporary in-memory filesystem (tmpfs). Useful for ephemeral data that doesn't persist across reboots.
 
 
 ---
