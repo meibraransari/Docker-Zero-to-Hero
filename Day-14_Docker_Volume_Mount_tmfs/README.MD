@@ -37,7 +37,7 @@ By default, any data written inside a container is **lost when the container is 
 
 [![Watch on Youtube](https://i.ytimg.com/vi/P9p1khwDid0/maxresdefault.jpg)](https://youtu.be/P9p1khwDid0)
 
----
+
 
 # 🗂️ Types of Docker Volumes
 
@@ -68,6 +68,8 @@ docker volume ls
 * You define the name.
 * Managed by Docker in `/var/lib/docker/volumes/`.
 
+![image_layers](assets/named_volume.png)
+
 **Example:**
 
 ```bash
@@ -88,6 +90,8 @@ Host bind mounts involve mounting a specific directory or file from the host mac
 * Great for sharing data between host and container.
 * Can be relative or absolute path
 * -v ./path:/container/path is a shorthand for bind mount, easier and quicker.
+
+![image_layers](assets/bind_mount.png)
 
 **Example:**
 
@@ -221,6 +225,8 @@ docker volume prune
 ## 🔄 What It Does
 
 Allows one container to **reuse volumes** from another container.
+
+![image_layers](assets/shared_volume.png)
 
 ---
 
