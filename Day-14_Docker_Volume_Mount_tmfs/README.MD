@@ -38,6 +38,8 @@ By default, any data written inside a container is **lost when the container is 
 
 ## 1️⃣ Anonymous Volumes
 
+Anonymous volumes are created automatically by Docker when a container is started, and a volume is specified without a specific name. They are often used for temporary or disposable data, as they are not explicitly named and can be challenging to manage outside the context of the container.
+
 * Created without a specific name.
 * Docker generates a random name internally.
 
@@ -54,6 +56,8 @@ docker volume ls
 
 ## 2️⃣ Named Volumes
 
+ Named volumes are explicitly created and named using the docker volume create command. They provide a way to manage and share data across containers with a user-defined name.
+
 * You define the name.
 * Managed by Docker in `/var/lib/docker/volumes/`.
 
@@ -61,15 +65,17 @@ docker volume ls
 
 ```bash
 docker volume create nginx_data
-docker run -v nginx_data:/usr/share/nginx/html/ nginx:alpine
+docker run -itd -v nginx_data:/usr/share/nginx/html/ nginx:alpine
 or
-docker run --volume nginx_data:/usr/share/nginx/html/ nginx:alpine
+docker run -itd --volume nginx_data:/usr/share/nginx/html/ nginx:alpine
 docker volume ls
 ```
 
 ---
 
 ## 3️⃣ Mapped/Host Volumes (a form of Bind Mount)
+
+Host bind mounts involve mounting a specific directory or file from the host machine into the container. Changes made in the container affect the host file system, and vice versa.
 
 * Maps a directory on the **host** to the container.
 * Great for sharing data between host and container.
@@ -79,7 +85,7 @@ docker volume ls
 **Example:**
 
 ```bash
-docker run -p 80:80 -v ./data:/usr/share/nginx/html/ nginx:alpine
+docker run -itd -p 80:80 -v ./data:/usr/share/nginx/html/ nginx:alpine
 sudo nano ./data/index.html
 curl http://localhost
 sudo nano ./data/index.html
@@ -89,6 +95,8 @@ sudo nano ./data/index.html
 
 ## 4️⃣ Bind Mounts (explicit)
 
+Host bind mounts involve mounting a specific directory or file from the host machine into the container. Changes made in the container affect the host file system, and vice versa.
+
 * Uses absolute paths.
 * Data is managed **directly** by the host OS.
 * Must be absolute path
@@ -97,7 +105,7 @@ sudo nano ./data/index.html
 **Example:**
 
 ```bash
-docker run -p 80:80 --mount type=bind,source=/home/user/data/,target=/usr/share/nginx/html/ nginx:alpine
+docker run -itd -p 80:80 --mount type=bind,source=/home/user/data/,target=/usr/share/nginx/html/ nginx:alpine
 curl http://localhost
 ```
 
@@ -117,6 +125,8 @@ curl http://localhost
 
 ## 5️⃣ tmpfs Mounts
 
+tmpfs mounts allow you to create an in-memory volume that is stored in the host's memory rather than on disk. This type of volume is useful for temporary data that does not need to persist across container restarts.
+
 * Stored in host memory (RAM), not on disk.
 * Volatile: Data does not persist after the container stops.
 * High-performance: Ideal for fast, temporary data storage. very fast and lightweight storage (faster than other mounts because of in-memory )
@@ -125,10 +135,10 @@ curl http://localhost
 **Example:**
 
 ```bash
-docker run --tmpfs /app nginx:latest
-docker run --mount type=tmpfs,destination=/usr/share/nginx/html/ nginx:alpine
+docker run -itd --tmpfs /app nginx:latest
+docker run -itd --mount type=tmpfs,destination=/usr/share/nginx/html/ nginx:alpine
 or
-docker run --mount type=tmpfs,destination=/app/data,tmpfs-size=100m,tmpfs-mode=1770 nginx:alpine
+docker run -itd --mount type=tmpfs,destination=/app/data,tmpfs-size=100m,tmpfs-mode=1770 nginx:alpine
 # This mounts a tmpfs volume to /app/data inside the container. All data written to this path will be stored in the host’s RAM.
 docker run -d \
   -it \
