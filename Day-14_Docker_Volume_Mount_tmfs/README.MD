@@ -1,4 +1,4 @@
-# 🚀 Mastering Docker Volumes Named, Anonimus, Bind Mount and tmpfs | Complete Guide
+# 🚀 Mastering Docker Volumes Named, Anonymous, Bind Mount and tmpfs | Complete Guide
 
 Welcome to this **complete guide on Docker Volumes**! In this video, we'll go from basics to advanced topics, ensuring you're fully equipped to manage persistent data in Docker. Let's dive in! 🐳💡
 
