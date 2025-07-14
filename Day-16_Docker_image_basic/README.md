@@ -17,6 +17,12 @@ When you use an image, Docker launches **containers**, which are running instanc
 
 ---
 
+## 🎬 Video Demonstration
+
+[![Watch on Youtube](https://i.ytimg.com/vi/lDTsQn2zw18/maxresdefault.jpg)](https://youtu.be/lDTsQn2zw18)
+
+---
+
 ## 🗂️ Docker Images vs Containers
 
 | Component     | Description                                             |
