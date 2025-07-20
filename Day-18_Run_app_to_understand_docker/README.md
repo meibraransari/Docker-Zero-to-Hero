@@ -5,7 +5,7 @@
 > 🔧 Great for local development, debugging, and quick iterations without writing a Dockerfile!
 
 ---
-#### Method 1: 🐍Traditional way to run Python 
+## Method 1: 🐍Traditional way to run Python 
 ```
 # app.py
 
@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
 python3 app.py
 
-#### Method 2: 🔄 For Interactive Python (Debugging) Session 
+## Method 2: 🔄 For Interactive Python (Debugging) Session 
 
 ```bash
 docker run -itd \
@@ -44,7 +44,7 @@ docker run -itd \
 💡 Use this for debugging or trying out code quickly inside the container.
 📁 `-w` sets the working directory so your script can run as if it's local.
 
-#### Method 3: ✅ Basic Example (No Dockerfile Needed)
+## Method 3: ✅ Basic Example (No Dockerfile Needed)
 
 ```bash
 drm debug
@@ -61,7 +61,7 @@ docker run -itd \
 
 ---
 
-#### Method 4: 🔁 With Requirements Installation
+## Method 4: 🔁 With Requirements Installation
 
 mkdir app && cd app
 
@@ -114,7 +114,7 @@ docker run -itd \
 
 ---
 
-#### What we will cover in the next video:
+## What we will cover in the next video:
 
 We will **create our first Dockerfile**.
 
