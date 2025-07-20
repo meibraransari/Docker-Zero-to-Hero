@@ -4,6 +4,10 @@
 
 > 🔧 Great for local development, debugging, and quick iterations without writing a Dockerfile!
 
+## 🎬 Video Demonstration
+
+[![Watch on Youtube](https://i.ytimg.com/vi/wRwvoKsCMas/maxresdefault.jpg)](https://youtu.be/wRwvoKsCMas)
+
 ---
 ## Method 1: 🐍Traditional way to run Python 
 ```
