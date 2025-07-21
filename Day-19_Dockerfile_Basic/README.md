@@ -1,6 +1,6 @@
 ---
 created: 2025-07-21T07:15:40+05:30
-updated: 2025-07-21T08:16:15+05:30
+updated: 2025-07-21T08:17:15+05:30
 Maintainer: Ibrar Ansari
 ---
 
@@ -11,6 +11,7 @@ In this episode, we'll break down the basics of what a Dockerfile is, why it's i
 ## 🎬 Video Demonstration
 
 [![Watch on Youtube](https://i.ytimg.com/vi/o29bYAaNqeU/maxresdefault.jpg)](https://youtu.be/o29bYAaNqeU)
+
 
 ## 📌 What is a Dockerfile?
 
