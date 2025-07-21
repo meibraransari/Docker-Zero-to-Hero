@@ -20,6 +20,11 @@ It automates:
 - Setting environment variables
 - Running build commands
 
+## 🎬 Video Demonstration
+
+[![Watch on Youtube](https://i.ytimg.com/vi/o29bYAaNqeU/maxresdefault.jpg)](https://youtu.be/o29bYAaNqeU)
+
+
 ## 🧱 Basic Structure of a Dockerfile
 
 Here's a super simple Dockerfile:
