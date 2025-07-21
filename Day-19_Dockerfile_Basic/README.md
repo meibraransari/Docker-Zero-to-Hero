@@ -8,10 +8,6 @@ Maintainer: Ibrar Ansari
 
 In this episode, we'll break down the basics of what a Dockerfile is, why it's important, and how to write your very first one. Whether you're a developer, DevOps engineer, or just getting started with containers – you're in the right place! 🎯
 
-## 🎬 Video Demonstration
-
-[![Watch on Youtube](https://i.ytimg.com/vi/o29bYAaNqeU/maxresdefault.jpg)](https://youtu.be/o29bYAaNqeU)
-
 
 ## 📌 What is a Dockerfile?
 
