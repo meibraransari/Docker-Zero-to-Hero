@@ -73,6 +73,7 @@ curl http://localhost:5000/ping  # Expected response: "pong"
 ### 📚 Useful Links:
 
 * [Docker Reference](https://docs.docker.com/reference/dockerfile/)
+* [Images and layers](https://docs.docker.com/engine/storage/drivers/#images-and-layers)
 * [Dockerfile Official Examples](https://github.com/orgs/dockerfile/repositories)
 * [Dockerfile Other Examples](https://github.com/komljen/dockerfile-examples)
 * [Docker Samples](https://github.com/orgs/dockersamples/repositories)
