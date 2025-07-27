@@ -47,6 +47,9 @@ Here’s a **simple illustration** that gives you a high-level **overview of a D
 docker build -t advanced-python-docker .
 docker build --no-cache -t advanced-python-docker .
 
+# Explanation
+docker image history
+
 # 🛳️ Run the Docker container
 docker run -itd --name=apd -p 5000:5000 advanced-python-docker
 
