@@ -9,6 +9,11 @@ Maintainer: Ibrar Ansari
 
 A **Dockerfile** is a **text file** that contains a set of instructions used by Docker to build a container image. Each instruction in the Dockerfile tells Docker how to build the image step by step.
 
+## 🎬 Video Demonstration
+
+[![Watch on Youtube](https://i.ytimg.com/vi/O5-8GhvwMD8/maxresdefault.jpg)](https://youtu.be/O5-8GhvwMD8)
+
+
 ### Basic Structure of a Dockerfile
 
 Here are common **Dockerfile instructions** (keywords):
