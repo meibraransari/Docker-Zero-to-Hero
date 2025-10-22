@@ -26,6 +26,19 @@ You’ll build everything like required app, dependencies config etc except (cod
 - Build and push a PHP 8.1 base image, verify functionality with a sample app.
 - Create a Node.js-based init container image, push to private repo.
 
+```
+git clone https://github.com/meibraransari/Docker-Zero-to-Hero.git
+cd Docker-Zero-to-Hero/Day-21_Mastering_Dockerfile_Part_2/
+# Build Init Image
+cd init/
+bash init_base.sh
+# Build Nginx Image
+cd init/
+nginx_web_base.sh
+# Build PHP Image
+cd php/
+bash build_image.sh
+```
 ### 💼 Connect with Me 👇😊
 
 * 🔥 [**YouTube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)
