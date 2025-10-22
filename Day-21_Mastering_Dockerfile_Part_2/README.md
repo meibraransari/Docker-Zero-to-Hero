@@ -23,8 +23,12 @@ You’ll build everything like required app, dependencies config etc except (cod
 
 ## 🚀 Demo Time
 - Build and push a custom NGINX base image to a private Docker Hub repository, then test deployment.
+	- Single script file which create config and build docker base image and and pust to repo - Ready to use
 - Build and push a PHP 8.1 base image, verify functionality with a sample app.
+	- Multiple file with script to build docker base image and and pust to repo - Ready to use
 - Create a Node.js-based init container image, push to private repo.
+	- Single script file which create config and build docker base image and and pust to repo - After run it setup app and config
+
 
 ```
 git clone https://github.com/meibraransari/Docker-Zero-to-Hero.git
