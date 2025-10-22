@@ -14,7 +14,7 @@ You’ll build everything like required app, dependencies config etc except (cod
 
 | Benefit | Description |
 |----------|--------------|
-| 🧩 **Consistency** | Every environment (dev, test, prod) starts from the same setup. |
+| 🧩 **Consistency** | Every environment (dev, qa, uat and prod) starts from the same setup. |
 | ⚡ **Speed** | Using official prebuilt images reduces build time. |
 | 🛡️ **Security** | Official images are maintained with security updates. |
 | 🧰 **Simplicity** | You focus on your app, not system setup. |
