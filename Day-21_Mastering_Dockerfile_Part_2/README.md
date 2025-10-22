@@ -37,8 +37,8 @@ cd Docker-Zero-to-Hero/Day-21_Mastering_Dockerfile_Part_2/
 cd init/
 bash init_base.sh
 # Build Nginx Image
-cd init/
-nginx_web_base.sh
+cd nginx/
+bash nginx_web_base.sh
 # Build PHP Image
 cd php/
 bash build_image.sh
