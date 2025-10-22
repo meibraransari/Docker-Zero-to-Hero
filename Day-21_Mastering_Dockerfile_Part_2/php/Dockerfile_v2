@@ -1,0 +1,107 @@
+FROM ubuntu:22.04 AS builder
+
+# Add ll command
+RUN echo "alias ll='ls -alsh --color=auto'" >> /etc/bash.bashrc
+
+# Let the conatiner know that there is no tty
+ENV DEBIAN_FRONTEND=noninteractive
+ENV INSTALL_DIR=/var/www/html
+
+# Update Repo
+RUN apt-get update
+
+# Basic Requirements
+RUN apt-get -y install wget curl nano net-tools telnet iputils-ping
+
+# Install MySQl and Postgres Client
+RUN apt-get -y install mysql-client
+
+# Nginx
+RUN apt-get -y install nginx 
+
+# PHP Installation
+RUN apt-get -y install software-properties-common apt-transport-https
+RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+RUN apt-get update
+RUN apt-get -y install php8.1-fpm
+RUN mkdir /run/php 
+RUN cp /etc/php/8.1/fpm/php.ini /etc/php/8.1/fpm/php.ini_org
+
+# PHP Mpdules Requirements
+#RUN php -m ##To get all modules
+RUN apt-get -y install php-pear php8.1-dev php8.1-zip php8.1-curl php8.1-gd php8.1-mysql php8.1-xml php8.1-cgi php8.1-xsl php8.1-imap php8.1-mbstring php8.1-cli php8.1-common php8.1-bcmath php8.1-pgsql php8.1-fpm 
+
+# Install supervisor
+RUN apt-get -y install supervisor
+
+# Nginx config
+RUN sed -i -e"s/keepalive_timeout\s*65/keepalive_timeout 2/" /etc/nginx/nginx.conf
+RUN sed -i -e"s/keepalive_timeout 2/keepalive_timeout 2;\n\tclient_max_body_size 100m/" /etc/nginx/nginx.conf
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+
+# The /dev/std{in,out,err} files are normally just symlinks to /proc/self/fd/{0,1,2} (respectively). As such theres nothing gained over using methods that are POSIX defined.
+# Access=/proc/1/fd/1
+# Error=/proc/1/fd/2
+RUN ln -sf /proc/1/fd/1 /var/log/nginx/access.log \
+    && ln -sf /proc/1/fd/2 /var/log/nginx/error.log \
+    && ln -sf /proc/1/fd/1 /tmp/supervisord.log \
+    && ln -sf /proc/1/fd/1 /var/log/php8.1-fpm.log
+# Test: 
+# echo "test_log1" >> /proc/1/fd/1
+
+# php-fpm config
+RUN sed -i -e "s/upload_max_filesize\s*=\s*2M/upload_max_filesize = 100M/g" /etc/php/8.1/fpm/php.ini
+RUN sed -i -e "s/memory_limit\s*=\s*128M/memory_limit = 2048M/g" /etc/php/8.1/fpm/php.ini
+RUN sed -i -e "s/post_max_size\s*=\s*8M/post_max_size = 100M/g" /etc/php/8.1/fpm/php.ini
+RUN sed -i -e "s/;daemonize\s*=\s*yes/daemonize = no/g" /etc/php/8.1/fpm/php.ini
+RUN sed -i -e "s/;max_input_vars\s*=\s*1000/max_input_vars = 2000/g" /etc/php/8.1/fpm/php.ini
+# pool changes
+RUN sed -i -e "s/;catch_workers_output\s*=\s*yes/catch_workers_output = yes/g" /etc/php/8.1/fpm/pool.d/www.conf
+RUN sed -i -e "s/pm.max_children\s*=\s*5/pm.max_children = 50/g" /etc/php/8.1/fpm/pool.d/www.conf
+RUN sed -i -e "s/;pm.max_requests\s*=\s*500/pm.max_requests = 500/g" /etc/php/8.1/fpm/pool.d/www.conf
+# replace # by ; RUN find /etc/php/8.1/mods-available/tmp -name "*.ini" -exec sed -i -re 's/^(\s*)#(.*)/\1;\2/g' {} \;
+
+# Nginx site conf
+ADD ./nginx-site.conf /etc/nginx/sites-available/default
+
+# Supervisor Config
+RUN mkdir -p /var/log/supervisor
+RUN ln -s  /etc/supervisor/supervisord.conf /etc/supervisord.conf
+ADD ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Create directory for PHP files
+RUN mkdir -p /var/www/html
+WORKDIR /var/www/html
+
+# Set permissions
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod 755 /var/www/html
+
+# Change working Directory
+WORKDIR $INSTALL_DIR
+
+# Initialization and Startup Script
+ADD ./start.sh /start.sh
+RUN chmod 755 /start.sh
+
+#NETWORK PORTS
+# Supervisor
+EXPOSE 9011
+# NGINX
+EXPOSE 80
+
+# Clean up APT when done.
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Run
+CMD ["/bin/bash", "/start.sh"]
+
+# Second stage
+FROM scratch AS final
+COPY --from=builder / /
+WORKDIR /var/www/html
+#NETWORK PORTS
+EXPOSE 9011
+EXPOSE 80
+# Run
+CMD ["/bin/bash", "/start.sh"]
