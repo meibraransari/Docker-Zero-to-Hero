@@ -21,6 +21,11 @@ You’ll build everything like required app, dependencies config etc except (cod
 | 🚀 **Reusability** | Custom base images can be shared across multiple projects. |
 
 
+## 🎬 Video Demonstration
+
+[![Watch on Youtube](https://i.ytimg.com/vi/7gBcUZ22f-Q/maxresdefault.jpg)](https://youtu.be/7gBcUZ22f-Q)
+
+
 ## 🚀 Demo Time
 - Build and push a custom NGINX base image to a private Docker Hub repository, then test deployment.
 	- Single script file which create config and build docker base image and and push to repo - Ready to use
