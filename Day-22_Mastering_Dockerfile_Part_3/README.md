@@ -13,7 +13,7 @@ In this session, we’ll build and deploy two custom Docker images:
 
 ## 🎬 Video Demonstration
 
-[![Watch on Youtube](https://i.ytimg.com/vi/6_qmsH2S4M/maxresdefault.jpg)](https://youtu.be/6_qmsH2S4M)
+[![Watch on Youtube](https://i.ytimg.com/vi/c6_qmsH2S4M/maxresdefault.jpg)](https://youtu.be/c6_qmsH2S4M)
 
 
 ## 🚀 **Demo Overview**
