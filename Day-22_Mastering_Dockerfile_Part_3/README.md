@@ -11,6 +11,11 @@ In this session, we’ll build and deploy two custom Docker images:
    Built using the base image 👉 `hub.devopsinaction.lab/base/php81_web_base`
 
 
+## 🎬 Video Demonstration
+
+[![Watch on Youtube](https://i.ytimg.com/vi/6_qmsH2S4M/maxresdefault.jpg)](https://youtu.be/6_qmsH2S4M)
+
+
 ## 🚀 **Demo Overview**
 
 ### 🔹 Step 1: Build & Push a Custom NGINX App Image
