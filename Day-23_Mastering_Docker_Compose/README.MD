@@ -1,7 +1,3 @@
----
-created: 2025-10-24T07:18:12+05:30
-updated: 2025-10-25T16:35:12+05:30
----
 # Mastering Docker Compose ⚔ | Docker Compose Zero To Hero 🐳
 
 ## ⚙️ What is Docker Compose?
