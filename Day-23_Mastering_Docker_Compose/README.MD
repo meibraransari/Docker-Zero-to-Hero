@@ -30,9 +30,12 @@ You can spin up an entire application stack!
 ## 🧩 Core Components of Docker Compose
 
 Docker Compose revolves around three main building blocks:
+
 🧱 1. Services: A **service** represents a container. You define them in `docker-compose.yml` or  `ompose.yml` — specifying the **image**, **build context**, **ports**, **environment variables**, and more.
+
 🌐 2. Networks: Compose automatically creates a **default network** so services can talk to each other using container names.
 You can also define **custom networks** for better isolation or organization.
+
 💾 3. Volumes: To **persist data** (like database files), Compose allows you to create and mount **volumes** easily — ensuring your data survives container restarts.
 
 ---
