@@ -18,25 +18,23 @@ You can spin up an entire application stack!
 ---
 ### **Disadvantages of Docker Run Command.**
 
-🧩 **Harder to Manage Multi-Container Applications** – You must manually start and link each container individually.
-⚙️ **No Central Configuration** – All options must be specified in every command instead of a shared config file.  
-🔁 **Difficult to Reproduce and Maintain** – Recreating setups requires retyping or scripting long commands.  
-🧠 **Limited Environment Variable and Network Management** – Manual setup is needed for networking and environment sharing.  
-🪣 **No Built-In Service Dependencies** – There’s no native way to define or control container startup order.  
-🧹 **Harder Cleanup** – Stopping and removing multiple containers must be done one by one.  
-📈 **Limited Scalability** – Scaling services requires running and managing multiple commands manually.
+- 🧩 **Harder to Manage Multi-Container Applications** – You must manually start and link each container individually.
+- ⚙️ **No Central Configuration** – All options must be specified in every command instead of a shared config file.  
+- 🔁 **Difficult to Reproduce and Maintain** – Recreating setups requires retyping or scripting long commands.  
+- 🧠 **Limited Environment Variable and Network Management** – Manual setup is needed for networking and environment sharing.  
+- 🪣 **No Built-In Service Dependencies** – There’s no native way to define or control container startup order.  
+- 🧹 **Harder Cleanup** – Stopping and removing multiple containers must be done one by one.  
+- 📈 **Limited Scalability** – Scaling services requires running and managing multiple commands manually.
 
 ---
 ## 🧩 Core Components of Docker Compose
 
 Docker Compose revolves around three main building blocks:
 
-🧱 1. Services: A **service** represents a container. You define them in `docker-compose.yml` or  `ompose.yml` — specifying the **image**, **build context**, **ports**, **environment variables**, and more.
-
-🌐 2. Networks: Compose automatically creates a **default network** so services can talk to each other using container names.
+- 🧱 1. Services: A **service** represents a container. You define them in `docker-compose.yml` or  `ompose.yml` — specifying the **image**, **build context**, **ports**, **environment variables**, and more.
+- 🌐 2. Networks: Compose automatically creates a **default network** so services can talk to each other using container names.
 You can also define **custom networks** for better isolation or organization.
-
-💾 3. Volumes: To **persist data** (like database files), Compose allows you to create and mount **volumes** easily — ensuring your data survives container restarts.
+- 💾 3. Volumes: To **persist data** (like database files), Compose allows you to create and mount **volumes** easily — ensuring your data survives container restarts.
 
 ---
 ## 🌟 Why Use Docker Compose?
