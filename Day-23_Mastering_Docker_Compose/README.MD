@@ -1,4 +1,4 @@
-# Mastering Docker Compose ⚔ | Docker Compose Zero To Hero 🐳
+# 🐳 Day 23: # Mastering Docker Compose ⚔ | Docker Compose Zero To Hero 🐳
 
 ## ⚙️ What is Docker Compose?
 
