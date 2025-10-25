@@ -1,0 +1,13 @@
+# demo5
+# Mimimal+++(Add Network)
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge

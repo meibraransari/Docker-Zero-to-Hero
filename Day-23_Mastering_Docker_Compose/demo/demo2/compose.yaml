@@ -1,0 +1,7 @@
+# demo2
+# Mimimal+(Add additional things)
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"

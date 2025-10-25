@@ -1,0 +1,13 @@
+# Compose.yaml
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: my-nginx:latest   # <— This sets the name/tag for the built image
+    container_name: nginx # <— This sets the container’s name
+    working_dir: /code
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/code

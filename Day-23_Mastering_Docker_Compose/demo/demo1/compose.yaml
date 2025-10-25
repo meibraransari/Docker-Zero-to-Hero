@@ -1,0 +1,5 @@
+# demo1
+# Mimimal
+services:
+  web:
+    image: nginx:latest

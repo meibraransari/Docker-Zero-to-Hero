@@ -1,0 +1,13 @@
+# demo4
+# Mimimal+++(Add volumes)
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - web_data:/usr/share/nginx/html
+
+volumes:
+  web_data:
+

@@ -1,0 +1,18 @@
+# demo6
+# Intermediate (Add volumes + Network)
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - web_data:/usr/share/nginx/html
+    networks:
+      - webnet
+
+volumes:
+  web_data:
+
+networks:
+  webnet:
+    driver: bridge
