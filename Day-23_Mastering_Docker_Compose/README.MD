@@ -102,6 +102,16 @@ In older Compose files, the **version field** specified the format version — l
 🚀 **Docker Compose Multi-Examples** – Practice Makes Perfect! 💻🛠️  
 ⚡ Experiment, build, and conquer multi-container setups like a **true master**! 🏆🖥️
 
+
+🐳 Docker Compose Examples – Step by Step Practice
+
+Each example has a **unique YAML file name** (`demo1.yaml`, `demo2.yaml`, …).  
+Use the corresponding command to run it:
+
+```bash
+docker compose -f <filename> up -d
+```
+
 ```yaml
 # Mimimal
 services:
