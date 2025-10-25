@@ -340,13 +340,13 @@ docker compose down
 ## 💎 Awesome Docker Compose Resources 📚 Which Makes you Master ⚔
 
 You can find tons of real-world examples here 👇
-🔗 [Compose Specification Website](https://compose-spec.io/)
-🔗 [Docker Compose Documentation](https://docs.docker.com/compose/)
-🔗 [The Compose Specification](https://github.com/compose-spec/compose-spec/blob/main/spec.md)
-🔗 [Awesome Docker Compose Github](https://github.com/docker/awesome-compose)
-🔗 [Awesome Docker Compose Website](https://awesome-docker-compose.com/apps)
-🔗 [GitHub: ruanbekker/awesome-docker-compose](https://github.com/ruanbekker/awesome-docker-compose)
-🔗 [GitHub: Haxxnet/Compose-Examples](https://github.com/Haxxnet/Compose-Examples)
+- 🔗 [Compose Specification Website](https://compose-spec.io/)
+- 🔗 [Docker Compose Documentation](https://docs.docker.com/compose/)
+- 🔗 [The Compose Specification](https://github.com/compose-spec/compose-spec/blob/main/spec.md)
+- 🔗 [Awesome Docker Compose Github](https://github.com/docker/awesome-compose)
+- 🔗 [Awesome Docker Compose Website](https://awesome-docker-compose.com/apps)
+- 🔗 [GitHub: ruanbekker/awesome-docker-compose](https://github.com/ruanbekker/awesome-docker-compose)
+- 🔗 [GitHub: Haxxnet/Compose-Examples](https://github.com/Haxxnet/Compose-Examples)
 
 ---
 
@@ -354,8 +354,8 @@ You can find tons of real-world examples here 👇
 
 Easily convert `docker run` commands to Compose files using:
 
-🔗 [it-tools.tech Converter](https://it-tools.tech/docker-run-to-docker-compose-converter)
-🔗 [Composerize](https://www.composerize.com/)
+- 🔗 [it-tools.tech Converter](https://it-tools.tech/docker-run-to-docker-compose-converter)
+- 🔗 [Composerize](https://www.composerize.com/)
 
 Example:
 
@@ -382,12 +382,12 @@ https://github.com/meibraransari/ftp-server
 
 ## 🧭 Best Practices
 
-✅ Keep services **modular and independent**
-✅ Use **.env files** for secrets and configs
-✅ Always pin **specific image versions**
-✅ Use **volumes** for persistent data
-✅ Commit your `docker-compose.yml` file to version control
-✅ Use **healthchecks** to monitor service readiness
+- ✅ Keep services **modular and independent**
+- ✅ Use **.env files** for secrets and configs
+- ✅ Always pin **specific image versions**
+- ✅ Use **volumes** for persistent data
+- ✅ Commit your `docker-compose.yml` file to version control
+- ✅ Use **healthchecks** to monitor service readiness
 
 
 ---
