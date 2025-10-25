@@ -366,7 +366,7 @@ You can find tons of real-world examples here 👇
 - 🔗 [Awesome Docker Compose Website](https://awesome-docker-compose.com/apps)
 - 🔗 [GitHub: ruanbekker/awesome-docker-compose](https://github.com/ruanbekker/awesome-docker-compose)
 - 🔗 [GitHub: Haxxnet/Compose-Examples](https://github.com/Haxxnet/Compose-Examples)
-- 🤖 Get AI-powered help: from any Chatbots / LLM assistants (ChatGPT, Gemini, Claude, Grok, Copilot, Perplexity AI, Pi (Inflection), Mistral Le Chat, Reka, and YouChat.) to explore Docker Compose concepts interactively.
+- 🤖 **Get AI-powered help:** from any Chatbots / LLM assistants (ChatGPT, Gemini, Claude, Grok, Copilot, Perplexity AI, Pi (Inflection), Mistral Le Chat, Reka, and YouChat.) to explore Docker Compose concepts interactively.
 
 ---
 
