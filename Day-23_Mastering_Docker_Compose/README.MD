@@ -93,8 +93,8 @@ In older Compose files, the **version field** specified the format version — l
 | **3.9** | Latest legacy format supporting Compose V2.         |
 
 📝 **Note:** Docker Compose version is 🕰️ _obsolete_ and will ❌ **not be available for future use**.
-🔗 [Conversion Matrix](https://kompose.io/conversion/)
-🔗 [Legacy Compose File Versions](https://docs.docker.com/reference/compose-file/legacy-versions/)
+- 🔗 [Conversion Matrix](https://kompose.io/conversion/)
+- 🔗 [Legacy Compose File Versions](https://docs.docker.com/reference/compose-file/legacy-versions/)
 
 ---
 ## 💡 Docker Compose Examples
