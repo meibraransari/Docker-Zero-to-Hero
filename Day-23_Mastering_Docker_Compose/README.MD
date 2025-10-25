@@ -39,31 +39,29 @@ You can also define **custom networks** for better isolation or organization.
 ---
 ## 🌟 Why Use Docker Compose?
 
-🔧 **Simplified Control:** Define, configure, and manage multiple services in a single YAML file — no complex orchestration commands needed.
-👥 **Efficient Collaboration:** Easily share your `docker-compose.yml` file with your team — ensuring everyone runs the same setup.
-⚡ **Rapid Development:** Compose **reuses existing containers** when no changes are made — making restarts super fast during development.
-🌍 **Portability Across Environments:** Use environment variables to customize configurations for **development**, **staging**, and **production** effortlessly.
-💬 **Strong Community Support:** With a large community and extensive documentation, you’ll find countless tutorials, examples, and troubleshooting help online.
+- 🔧 **Simplified Control:** Define, configure, and manage multiple services in a single YAML file — no complex orchestration commands needed.
+- 👥 **Efficient Collaboration:** Easily share your `docker-compose.yml` file with your team — ensuring everyone runs the same setup.
+- ⚡ **Rapid Development:** Compose **reuses existing containers** when no changes are made — making restarts super fast during development.
+- 🌍 **Portability Across Environments:** Use environment variables to customize configurations for **development**, **staging**, and **production** effortlessly.
+- 💬 **Strong Community Support:** With a large community and extensive documentation, you’ll find countless tutorials, examples, and troubleshooting help online.
 
 ---
 
 ## 🚀 Docker Compose Benefits
 
-✅ Fast and easy configuration with **YAML scripts**
-✅ **Single-host** deployment made simple
-✅ Boosted **developer productivity**
-✅ Enhanced **security** through isolated containers
+- ✅ Fast and easy configuration with **YAML scripts**
+- ✅ **Single-host** deployment made simple
+- ✅ Boosted **developer productivity**
+- ✅ Enhanced **security** through isolated containers
 
 ---
 
 ## 🧰 Prerequisites
 Before using Docker Compose, make sure Docker and Compose are installed 👇
 
-🐋 Install Docker: 🔗 [Docker Engine Installation Guide](https://docs.docker.com/engine/install/)
-
-📦 Install Docker Compose: 🔗 [Docker Compose Releases](https://github.com/docker/compose/releases)
-
-📦 Run the following commands to install Docker manually:
+- 🐋 Install Docker: 🔗 [Docker Engine Installation Guide](https://docs.docker.com/engine/install/)
+- 📦 Install Docker Compose: 🔗 [Docker Compose Releases](https://github.com/docker/compose/releases)
+- 📦 Run the following commands to install Docker manually:
 
 ```bash
 cd /tmp && curl -fsSL https://get.docker.com -o get-docker.sh
@@ -71,7 +69,7 @@ sudo bash get-docker.sh
 sudo usermod $(whoami) -G docker -a
 ```
 
-📦 Run the following commands to install Compose manually:
+- 📦 Run the following commands to install Compose manually:
 
 ```bash
 #!/bin/bash
