@@ -103,14 +103,20 @@ In older Compose files, the **version field** specified the format version — l
 ⚡ Experiment, build, and conquer multi-container setups like a **true master**! 🏆🖥️   
 🐳 Docker Compose Examples – Step by Step Practice   
 
-Each example has a **unique YAML file name** (`demo1.yaml`, `demo2.yaml`, …).  
+Each example has a **unique folder name** (`demo1`, `demo2`, …). and enter in it and run command.
 Use the corresponding command to run it:
 
 ```bash
-docker compose -f <filename> up -d
+dup='docker compose up -d'
+ddown='docker compose down'
+DEMO_DIR=demo1 && mkdir $DEMO_DIR && cd $DEMO_DIR && nano compose.yaml
+# Write below one by one example and run it
+# verify config with command "docker compose config"
+# once done then use command "ddown" and use "cd .." to go outside of dir after completion of demo
 ```
 
 ```yaml
+# demo1
 # Mimimal
 services:
   web:
@@ -119,6 +125,7 @@ services:
 
 
 ```yaml
+# demo2
 # Mimimal+(Add additional things)
 services:
   web:
@@ -128,6 +135,7 @@ services:
 ```
 
 ```yaml
+# demo3
 # Mimimal With Build
 #Dockerfile
 FROM nginx:latest
@@ -159,6 +167,7 @@ docker compose -f ./build_compose.yaml up -d --build
 
 
 ```yaml
+# demo4
 # Mimimal+++(Add volumes)
 services:
   web:
@@ -173,6 +182,7 @@ volumes:
 ```
 
 ```yaml
+# demo5
 # Mimimal+++(Add Network)
 services:
   web:
@@ -188,6 +198,7 @@ networks:
 ```
 
 ```yaml
+# demo6
 # Intermediate (Add volumes + Network)
 services:
   web:
@@ -208,6 +219,7 @@ networks:
 ```
 
 ```yaml
+# demo7
 # Advance 
 .env_db
 # PostgreSQL credentials
@@ -326,11 +338,11 @@ volumes:
 
 
 ```bash
-# Commands
+# Demo Commands
 docker compose config
 docker compose up -d
-docker compose -f ./full_compose.yaml up -d
-docker compose --profile nginx up -d
+docker compose -f ./compose.yaml up -d
+docker compose -f ./compose.yaml --profile nginx up -d
 
 dec nginx
 htop
