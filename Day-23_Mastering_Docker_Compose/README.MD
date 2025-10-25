@@ -16,9 +16,9 @@ docker-compose up -d
 You can spin up an entire application stack!
 
 ---
-### **Disadvantages of Docker Run Command.
+### **Disadvantages of Docker Run Command.**
 
-🧩 **Harder to Manage Multi-Container Applications** – You must manually start and link each container individually.  
+🧩 **Harder to Manage Multi-Container Applications** – You must manually start and link each container individually.
 ⚙️ **No Central Configuration** – All options must be specified in every command instead of a shared config file.  
 🔁 **Difficult to Reproduce and Maintain** – Recreating setups requires retyping or scripting long commands.  
 🧠 **Limited Environment Variable and Network Management** – Manual setup is needed for networking and environment sharing.  
