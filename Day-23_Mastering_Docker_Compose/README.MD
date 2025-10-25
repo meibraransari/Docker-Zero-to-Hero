@@ -110,6 +110,8 @@ Use the corresponding command to run it:
 dup='docker compose up -d'
 ddown='docker compose down'
 DEMO_DIR=demo1 && mkdir $DEMO_DIR && cd $DEMO_DIR && nano compose.yaml
+or
+# Clone github repo and practice each demo
 # Write below one by one example and run it
 # verify config with command "docker compose config"
 # once done then use command "ddown" and use "cd .." to go outside of dir after completion of demo
