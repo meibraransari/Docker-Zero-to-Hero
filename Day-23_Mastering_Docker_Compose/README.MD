@@ -57,15 +57,21 @@ You can also define **custom networks** for better isolation or organization.
 
 ## 🧰 Prerequisites
 Before using Docker Compose, make sure Docker and Compose are installed 👇
+
 🐋 Install Docker: 🔗 [Docker Engine Installation Guide](https://docs.docker.com/engine/install/)
+
 📦 Install Docker Compose: 🔗 [Docker Compose Releases](https://github.com/docker/compose/releases)
+
 📦 Run the following commands to install Docker manually:
+
 ```bash
 cd /tmp && curl -fsSL https://get.docker.com -o get-docker.sh
 sudo bash get-docker.sh
 sudo usermod $(whoami) -G docker -a
 ```
+
 📦 Run the following commands to install Compose manually:
+
 ```bash
 #!/bin/bash
 compose_version=$(curl https://api.github.com/repos/docker/compose/releases/latest | jq .name -r)
