@@ -359,10 +359,10 @@ docker compose down
 ## 💎 Awesome Docker Compose Resources 📚 Which Makes you Master ⚔
 
 You can find tons of real-world examples here 👇
-- 🔗 [Compose Specification Website](https://compose-spec.io/)
 - 🔗 [Docker Compose Documentation](https://docs.docker.com/compose/)
-- 🔗 [The Compose Specification](https://github.com/compose-spec/compose-spec/blob/main/spec.md)
-- 🔗 [Awesome Docker Compose Github](https://github.com/docker/awesome-compose)
+- 🔗 [Compose Specification Website](https://compose-spec.io/)
+  - 🔗 [The Compose Specification](https://github.com/compose-spec/compose-spec/blob/main/spec.md)
+  - 🔗 [Awesome Docker Compose Github](https://github.com/docker/awesome-compose)
 - 🔗 [Awesome Docker Compose Website](https://awesome-docker-compose.com/apps)
 - 🔗 [GitHub: ruanbekker/awesome-docker-compose](https://github.com/ruanbekker/awesome-docker-compose)
 - 🔗 [GitHub: Haxxnet/Compose-Examples](https://github.com/Haxxnet/Compose-Examples)
