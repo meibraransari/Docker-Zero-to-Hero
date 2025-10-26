@@ -21,7 +21,7 @@ You can spin up an entire application stack!
 - 🪣 **No Built-In Service Dependencies** – There’s no native way to define or control container startup order.  
 - 🧹 **Harder Cleanup** – Stopping and removing multiple containers must be done one by one.  
 - 📈 **Limited Scalability** – Scaling services requires running and managing multiple commands manually.
-
+- 🔄 **Upgrade Complexity** – Updating or changing container configurations requires manually stopping and rerunning containers with new parameters.
 ---
 ## 🧩 Core Components of Docker Compose
 
